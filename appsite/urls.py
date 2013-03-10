@@ -5,9 +5,11 @@ from django.conf.urls import patterns, include, url
 # admin.autodiscover()
 
 urlpatterns = patterns('',
+    url(r'^targeted/(?P<PARAMETER>[^/]+)/$', 'appsite.targetED.views.METHOD')
+
     # Examples:
-    # url(r'^$', 'appsite.views.home', name='home'),
-    # url(r'^appsite/', include('appsite.foo.urls')),
+    #url(r'^$', 'appsite.views.home', name='home'),
+    #url(r'^appsite/', include('appsite.foo.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
